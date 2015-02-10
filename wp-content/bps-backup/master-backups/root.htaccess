@@ -1,0 +1,150 @@
+<files wp-config.php>
+   order allow,deny
+   deny from all
+</files>
+
+
+<Files ~"^.*\.([Hh][Tt][Aa])">
+   Order allow,deny
+   Deny from all
+   Satisfy all
+</files>
+
+<files readme.txt>
+   Order allow,deny
+   Deny from all
+</files>
+
+<files install.php>
+   Order allow,deny
+   Deny from all
+   Satisfy all
+</files>
+
+<files xmlrpc.php>
+   Order allow,deny
+   Deny from all
+</files>
+
+# HOTLINKBUILDING
+
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://opcioninmuebles.com/$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://opcioninmuebles.com$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://opcioninmuebles.com/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.feedburner.com/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://feeds.feedburner.com/opcioninmuebles.com$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.planetaki.com/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://[^/.]\.bloglines\.com$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.google.com/reader/view/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.google.com/reader/m/view/.*$ [NC]
+RewriteRule .*\.(jpg|jpeg|png|gif|bmp)$ http://opcioninmuebles.com/no_al_hotlinking.gif [NC,F,L]
+
+Options All -Indexes
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_METHOD} ^(HEAD|TRACE|DELETE|TRACK) [NC]
+RewriteRule ^(.*)$ - [F,L]
+RewriteCond %{QUERY_STRING} \.\.\/ [NC,OR]
+RewriteCond %{QUERY_STRING} boot\.ini [NC,OR]
+RewriteCond %{QUERY_STRING} tag\= [NC,OR]
+RewriteCond %{QUERY_STRING} ftp\:  [NC,OR]
+RewriteCond %{QUERY_STRING} http\:  [NC,OR]
+RewriteCond %{QUERY_STRING} https\:  [NC,OR]
+RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} mosConfig_[a-zA-Z_]{1,21}(=|%3D) [NC,OR]
+RewriteCond %{QUERY_STRING} base64_encode.*\(.*\) [NC,OR]
+RewriteCond %{QUERY_STRING} ^.*(\[|\]|\(|\)|<|>|ê|"|;|\?|\*|=$).* [NC,OR]
+RewriteCond %{QUERY_STRING} ^.*(&#x22;|&#x27;|&#x3C;|&#x3E;|&#x5C;|&#x7B;|&#x7C;).* [NC,OR]
+RewriteCond %{QUERY_STRING} ^.*(%24&x).* [NC,OR]
+RewriteCond %{QUERY_STRING} ^.*(%0|%A|%B|%C|%D|%E|%F|127\.0).* [NC,OR]
+RewriteCond %{QUERY_STRING} ^.*(globals|encode|localhost|loopback).* [NC,OR]
+RewriteCond %{QUERY_STRING} ^.*(request|select|insert|union|declare).* [NC]
+RewriteCond %{HTTP_COOKIE} !^.*wordpress_logged_in_.*$
+RewriteRule ^(.*)$ - [F,L]
+
+
+#   BULLETPROOF .50.8 >>>>>>> SECURE .HTACCESS     
+
+# If you edit the BULLETPROOF .50.8 >>>>>>> SECURE .HTACCESS text above
+# you will see error messages on the BPS Security Status page
+# BPS is reading the version number in the htaccess file to validate checks
+# If you would like to change what is displayed above you
+# will need to edit the BPS /includes/functions.php file to match your changes
+# If you update your WordPress Permalinks the code between BEGIN WordPress and
+# END WordPress is replaced by WP htaccess code.
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteRule ^admincontrol3912/?$ /wp-login.php [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteRule ^admincontrol3912/?$ /wp-login.php [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteRule ^admincontrol3912/?$ /wp-login.php [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+# BLOCK HOTLINKING TO IMAGES
+# To Test that your Hotlinking protection is working visit http://altlab.com/htaccess_tutorial.html
+#RewriteEngine On
+#RewriteCond %{HTTP_REFERER} !^https?://(www\.)?add-your-domain-here\.com [NC]
+#RewriteCond %{HTTP_REFERER} !^$
+#RewriteRule .*\.(jpeg|jpg|gif|bmp|png)$ - [F]
+
+# FORBID COMMENT SPAMMERS ACCESS TO YOUR wp-comments-post.php FILE
+# This is a better approach to blocking Comment Spammers so that you do not 
+# accidentally block good traffic to your website. You can add additional
+# Comment Spammer IP addresses on a case by case basis below.
+# Searchable Database of known Comment Spammers http://www.stopforumspam.com/
+
+<FilesMatch "^(wp-comments-post\.php)">
+Order Allow,Deny
+Deny from 46.119.35.
+Deny from 46.119.45.
+Deny from 91.236.74.
+Deny from 93.182.147.
+Deny from 93.182.187.
+Deny from 94.27.72.
+Deny from 94.27.75.
+Deny from 94.27.76.
+Deny from 193.105.210.
+Deny from 195.43.128.
+Deny from 198.144.105.
+Deny from 199.15.234.
+Allow from all
+</FilesMatch>
+
+# BLOCK MORE BAD BOTS RIPPERS AND OFFLINE BROWSERS
+# If you would like to block more bad bots you can get a blacklist from
+# http://perishablepress.com/press/2007/06/28/ultimate-htaccess-blacklist/
+# You should monitor your site very closely for at least a week if you add a bad bots list
+# to see if any website traffic problems or other problems occur.
+# Copy and paste your bad bots user agent code list directly below.

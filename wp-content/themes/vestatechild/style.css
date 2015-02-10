@@ -1,0 +1,114 @@
+/*
+Theme Name: vEstate ChildTheme
+Theme URI: http://www.VibeThemes.com    
+Description: Child Theme for vEstate WordPress Theme
+Author: VibeThemes
+Author URI: http://themeforest.com/user/vibethemes
+Template: vestate
+Version: 1.0
+*/
+
+@import url("../vestate/style.css");
+
+header {
+   height: 13em;
+   border-top-color: #192F88!important;
+}
+
+#nav_horizontal li:hover .sub-menu a:hover, #nav_horizontal .extras li:hover .loggedin_menu li a:hover {
+   background: #FF8A0F!important;
+   color: white!important;
+   font-weight: bold!important;
+}
+
+
+.form-suscription
+{
+   padding: 1em;
+   width: 20em;
+   display: inline-block;
+   background-color: #FBFAFB;
+   text-align: center;
+   border: 1px solid #EFEFEF;
+}
+
+input[type='submit'] {
+   color: #fff;
+   background-color: #FF8A0F;
+   font-size: 18px;
+   padding: 0.7em 6em;
+   width: 100%;
+   transition: all 0.2s linear 0s;
+   -webkit-transition: all 0.2s linear 0s;
+   -moz-transition: all 0.2s linear 0s;
+   -o-transition: all 0.2s linear 0s;
+   -ms-transition: all 0.2s linear 0s;
+}
+
+input[type='submit']:hover {
+   background-color: #8BC954;
+}
+.advanced_listing_search .btn 
+{
+   font-size: 18px;
+}
+figure.familia {
+margin-top: 1.1em;
+}
+
+.stripenext {
+   padding-top: 0;
+}
+
+.vibe_carousel {
+   margin-bottom: 0;
+}
+
+.form-aweber
+{
+   padding: 10px;
+   background: #669BCC;
+   border: 1px solid #EFEFEF;
+}
+
+.form-aweber:after {
+   content: "";
+   width: 20px;
+   height: 20px;
+   background: #669bcc;
+   position: absolute;
+   top: 25px;
+   left: -10px;
+   transform: rotate(45deg);
+   -o-transform: rotate(45deg);
+   -moz-transform: rotate(45deg);
+   -webkit-transform: rotate(45deg);
+}
+
+.headline,
+.subheadline
+{
+   color:white;
+   margin-left: .2em;
+   display: block;
+}
+
+.headline
+{
+   font-size:20px;
+   font-weight: bold;
+   text-align: center;
+   background: rgb(45, 39, 75);
+   padding: .5em 0;
+}
+
+.subheadline
+{
+   font-size:16px;
+   text-align: center;
+}
+
+#search.active
+{
+   color: gray!important;
+}

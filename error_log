@@ -1,0 +1,20 @@
+[02-Dec-2014 19:10:14 UTC] PHP Warning:  include_once(/home/opcioninmuebles/public_html/wp-content/plugins/sucuri-scanner/sucuri.php): failed to open stream: No such file or directory in /home/opcioninmuebles/public_html/wp-settings.php on line 215
+[02-Dec-2014 19:10:14 UTC] PHP Warning:  include_once(): Failed opening '/home/opcioninmuebles/public_html/wp-content/plugins/sucuri-scanner/sucuri.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/opcioninmuebles/public_html/wp-settings.php on line 215
+[02-Dec-2014 19:10:14 UTC] PHP Warning:  strpos(): Empty needle in /home/opcioninmuebles/public_html/wp-includes/plugin.php on line 658
+[02-Dec-2014 19:10:14 UTC] PHP Warning:  strpos(): Empty needle in /home/opcioninmuebles/public_html/wp-includes/plugin.php on line 658
+[02-Dec-2014 19:10:14 UTC] PHP Warning:  strpos(): Empty needle in /home/opcioninmuebles/public_html/wp-includes/plugin.php on line 658
+[02-Dec-2014 19:10:14 UTC] PHP Warning:  strpos(): Empty needle in /home/opcioninmuebles/public_html/wp-includes/plugin.php on line 658
+[02-Dec-2014 19:10:14 UTC] PHP Warning:  strpos(): Empty needle in /home/opcioninmuebles/public_html/wp-includes/plugin.php on line 658
+[02-Dec-2014 19:10:14 UTC] PHP Warning:  strpos(): Empty needle in /home/opcioninmuebles/public_html/wp-includes/plugin.php on line 658
+[02-Dec-2014 19:10:14 UTC] PHP Warning:  strpos(): Empty needle in /home/opcioninmuebles/public_html/wp-includes/plugin.php on line 658
+[02-Dec-2014 19:10:14 UTC] PHP Warning:  strpos(): Empty needle in /home/opcioninmuebles/public_html/wp-includes/plugin.php on line 658
+[02-Dec-2014 19:10:14 UTC] PHP Warning:  strpos(): Empty needle in /home/opcioninmuebles/public_html/wp-includes/plugin.php on line 658
+[02-Dec-2014 19:10:14 UTC] PHP Warning:  strpos(): Empty needle in /home/opcioninmuebles/public_html/wp-includes/plugin.php on line 658
+[02-Dec-2014 19:10:14 UTC] PHP Warning:  strpos(): Empty needle in /home/opcioninmuebles/public_html/wp-includes/plugin.php on line 658
+[02-Dec-2014 19:10:15 UTC] PHP Warning:  strpos(): Empty needle in /home/opcioninmuebles/public_html/wp-includes/plugin.php on line 658
+[02-Dec-2014 19:10:15 UTC] PHP Warning:  strpos(): Empty needle in /home/opcioninmuebles/public_html/wp-includes/plugin.php on line 658
+[02-Dec-2014 19:10:15 UTC] PHP Warning:  strpos(): Empty needle in /home/opcioninmuebles/public_html/wp-includes/plugin.php on line 658
+[02-Dec-2014 19:10:15 UTC] PHP Warning:  strpos(): Empty needle in /home/opcioninmuebles/public_html/wp-includes/plugin.php on line 658
+[02-Dec-2014 19:10:15 UTC] PHP Warning:  strpos(): Empty needle in /home/opcioninmuebles/public_html/wp-includes/plugin.php on line 658
+[02-Dec-2014 19:10:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/opcioninmuebles/public_html/wp-settings.php:215) in /home/opcioninmuebles/public_html/wp-includes/pluggable.php on line 1179
+[04-Dec-2014 04:42:50 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/opcioninmuebles/public_html/wp-content/themes/vestate/includes/widgets/flickr.php on line 34

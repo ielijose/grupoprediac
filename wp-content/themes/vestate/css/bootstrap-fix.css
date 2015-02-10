@@ -1,0 +1,48 @@
+/* 
+    Document   : bootstrap-fix
+    Created on : Apr 12, 2013, 8:28:24 PM
+    Author     : VibeThemes
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.carousel-indicators li{
+    padding:0 !important;
+}
+@media print {
+    .span823 {
+        width: 400px;
+    }
+    .row-fluid .span823 {
+         width: 44.680851063%;
+        }
+        
+    .span83{
+    width:183px; 
+        }    
+        
+        
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+     .span823{
+      width:311px;
+    }
+   .span83{
+    width:135px;
+    }
+    
+ .row-fluid .span83 {
+    width: 18.6464%;
+    *width: 18.6464%;
+  }
+  
+}
+
+
+@media (min-width: 980px) {
+  .nav-collapse.collapse {
+    height: auto !important;
+    overflow: visible !important;
+  }
+}

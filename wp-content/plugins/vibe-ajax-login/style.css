@@ -1,0 +1,241 @@
+/* RESET STYLE */
+
+#ajax-login-wrap * {
+	color: #666;
+	background-image: none;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.625;
+	padding: 0;
+	border: 0;
+	-moz-border-radius: 0;
+	-o-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	margin: 0;
+	vertical-align: baseline;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	outline: none;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	word-wrap: break-word;
+}
+
+#ajax-login-wrap img{
+	border-radius:2px;
+	float:left;
+	margin-right:20px;
+}
+
+#ajax-login-user .account_info{
+	display: block;
+	margin-left: 70px;
+	text-align: left;
+}
+/* Ajax Login Style */
+
+#ajax-login-wrap {
+	max-width: 100%;
+	color: #666; 
+	font-size: 14px;
+	font-weight: normal;
+	border: 1px solid #EFEFEF;
+	border-radius:2px;
+	overflow: hidden;
+}
+
+#ajax-login-wrap #ajax-login-tabs {
+	width: 100%;
+	margin: 0;
+	border-bottom: 1px solid #EFEFEF;
+	height: auto;
+	overflow: hidden;
+}
+
+#ajax-login-tabs .ajax-login-tab {
+	display: block;
+	float: left;
+	width: 50%;
+	padding: 10px 0;
+	font-size: 11px;
+	text-align: center;
+	text-decoration: none;
+	color: #222;
+	text-transform: uppercase;
+	background-color: #EFEFEF;
+}
+
+#ajax-login-tabs a{
+	font-weight:600;
+}
+
+#ajax-login-tabs .ajax-login-tab.selected, #ajax-login-wrap #ajax-login-tabs .ajax-login-tab:hover {
+	background-color: #FFF;
+	color: #444;
+	font-weight:600;
+}
+
+#ajax-login-content-tab {
+	padding: 10px;
+}
+
+#ajax-login-content-tab .ajax-login-form-wrap {
+	display: none;
+}
+
+#ajax-login-content-tab p {
+	margin-bottom: 5px;
+}
+
+#ajax-login-content-tab a {
+	color: #333;
+	outline: none;
+	font-weight: normal;
+	font-size: 11px;
+}
+
+#ajax-login-content-tab  h3 {
+	font-weight: bold;
+}
+
+#ajax-login-content-tab h2 {
+	color: #555;
+	font-weight: 200;
+	font-size: 18px;
+	line-height: 1.625;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#ajax-login-content-tab input[type="text"], #ajax-login-content-tab input[type="password"], #ajax-login-content-tab input[type="email"] {
+	color: #444;
+	font: 13px;
+	font-weight: 200;
+	width: 100%;
+	border: 1px solid #EFEFEF;
+	outline: 0;
+	padding: 5px 0;
+	text-indent: 5px;
+	border-radius:2px;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	background-color: #fff;
+}
+
+#ajax-login-content-tab input[type="text"]:hover, #ajax-login-content-tab input[type="password"]:hover, #ajax-login-content-tab input[type="email"]:hover {
+	border: 1px solid #EEE;
+}
+
+#ajax-login-content-tab input:-moz-placeholder, #ajax-login-content-tab input::-webkit-input-placeholder {
+	color: #aaa;
+}
+
+#ajax-login-content-tab input[type="checkbox"] {
+	margin-right: 5px;
+}
+
+#ajax-login-content-tab input[type="submit"], #ajax-login-user a, #ajax-recaptcha-container a {
+	width: 100%;
+	text-align: center;
+    text-decoration: none;
+    color: #FFF; 
+    font-size: 11px;
+    font-weight:600;
+    text-transform: uppercase;
+	border: none;
+	display: inline-block;
+	padding: 6px 14px;
+	background-color: #d73c3c;
+	line-height: 1.625;
+	border-radius:2px;
+}
+
+#ajax-login-content-tab input[type="submit"]:hover, #ajax-login-user a:hover, #ajax-recaptcha-container a:hover {
+	background-color: #F8F8F8;
+	color:#222;
+	cursor:pointer;
+}
+
+#ajax-login-show-error {
+	
+	background-color: #f9edbe;
+	color: #444;
+	font-size:11px;
+	text-transform: uppercase;
+	font-weight:600;
+	max-width: 220px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	margin: 5px 0px;
+	text-align: left;
+	border: 1px solid;
+	border-color: #f0c36d;
+	padding: 10px;
+	display: none;
+}
+
+#ajax-login-show-error strong{
+	color:  #222;
+}
+
+#ajax-login-wrap #ajax-login-user {
+	padding: 10px;
+	height: auto;
+	overflow: hidden;
+	text-align: center;
+}
+
+#ajax-login-user .avatar {
+	margin: 0;
+	max-width: 100%;
+	height: auto;
+	-moz-box-shadow: 0px 1px 3px 0px #000 !important;
+	-webkit-box-shadow: 0px 1px 3px 0px #000 !important;
+	box-shadow: 0px 1px 3px 0px #000 !important;
+}
+
+#ajax-login-user h4 {
+	font-size: 13px;
+	font-weight: bold;
+	margin-bottom:5px;
+	text-transform: uppercase;
+}
+
+#ajax-login-user a {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 2px;
+	padding: 4px 0;
+}
+
+/* RECAPTCHA */
+
+#ajax-recaptcha-container {
+	margin: 10px 0;
+}
+
+#ajax-recaptcha-container #recaptcha_image {
+	max-width: 100%;
+	height: 57px;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+}
+
+#ajax-recaptcha-container #recaptcha_image img {
+	max-width: 100%;
+	height: 57px;
+}
+
+#ajax-recaptcha-container a {
+	display: block;
+	padding: 5px 0;
+	margin-bottom: 5px;
+}
