@@ -22,7 +22,7 @@ define('DB_NAME', 'grupopre_inmobi');
 define('DB_USER', 'grupopre_inmobi');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'g^LVm4~K#FO,q)~F$?');
+define('DB_PASSWORD', 'QQ4pNZf424J(');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

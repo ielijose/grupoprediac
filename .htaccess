@@ -30,16 +30,16 @@
 
 RewriteEngine on
 RewriteCond %{HTTP_REFERER} !^$
-RewriteCond %{HTTP_REFERER} !^http://opcioninmuebles.com/$ [NC]
-RewriteCond %{HTTP_REFERER} !^http://opcioninmuebles.com$ [NC]
-RewriteCond %{HTTP_REFERER} !^http://opcioninmuebles.com/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://grupoprediac.com/$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://grupoprediac.com$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://grupoprediac.com/.*$ [NC]
 RewriteCond %{HTTP_REFERER} !^http://www.feedburner.com/.*$ [NC]
-RewriteCond %{HTTP_REFERER} !^http://feeds.feedburner.com/opcioninmuebles.com$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://feeds.feedburner.com/grupoprediac.com$ [NC]
 RewriteCond %{HTTP_REFERER} !^http://www.planetaki.com/.*$ [NC]
 RewriteCond %{HTTP_REFERER} !^http://[^/.]\.bloglines\.com$ [NC]
 RewriteCond %{HTTP_REFERER} !^http://www.google.com/reader/view/.*$ [NC]
 RewriteCond %{HTTP_REFERER} !^http://www.google.com/reader/m/view/.*$ [NC]
-RewriteRule .*\.(jpg|jpeg|png|gif|bmp)$ http://opcioninmuebles.com/no_al_hotlinking.gif [NC,F,L]
+RewriteRule .*\.(jpg|jpeg|png|gif|bmp)$ http://grupoprediac.com/no_al_hotlinking.gif [NC,F,L]
 
 Options All -Indexes
 
